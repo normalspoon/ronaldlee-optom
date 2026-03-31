@@ -1,4 +1,5 @@
 # Static site — files at repo root (index.html, styles.css, script.js)
+# Redeploy: push to main (if site is Git-linked) or run `netlify deploy --prod --dir .`
 [build]
   command = "true"
   publish = "."
