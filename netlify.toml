@@ -1,0 +1,4 @@
+# Static site — files at repo root (index.html, styles.css, script.js)
+[build]
+  command = "true"
+  publish = "."
