@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const submitBtn = form.querySelector('.form-submit');
       const originalText = submitBtn.textContent;
+      statusEl.className = 'form-status';
+      statusEl.textContent = '';
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
 
@@ -74,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } catch (err) {
         statusEl.className = 'form-status error';
-        statusEl.textContent = 'Something went wrong. Please try again or email directly.';
+        statusEl.textContent = 'Something went wrong. Please try again shortly.';
       }
 
       submitBtn.textContent = originalText;
