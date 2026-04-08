@@ -364,6 +364,16 @@ section {
   animation: fadeUp 0.6s 0.7s forwards;
 }
 
+.hero-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: -0.8rem;
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s 0.8s forwards;
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -964,6 +974,38 @@ section {
 }
 
 /* ============================================
+   FAQ
+   ============================================ */
+.faq {
+  background: var(--teal-50);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.faq-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(15, 107, 110, 0.06);
+}
+
+.faq-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.faq-card p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================
    CONTACT
    ============================================ */
 .contact {
@@ -1262,6 +1304,10 @@ section {
   }
 
   .volunteer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 

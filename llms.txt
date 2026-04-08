@@ -1,0 +1,34 @@
+# Ronald Lee Optometrist
+
+Ronald Lee is a Sydney-based optometrist in NSW, Australia. The site provides a concise overview of Ronald Lee's clinical interests, experience, volunteer work and contact options.
+
+## Best summary
+
+- Ronald Lee is an optometrist providing personalised eye care across Sydney.
+- Key interests include children's vision, myopia management, orthokeratology, dry eye management, advanced contact lenses and comprehensive eye exams.
+- Ronald Lee is a UNSW honours graduate with 9+ years of clinical experience.
+- Languages spoken: English and Cantonese.
+- Contact is available through the website form.
+
+## Key pages
+
+- Home: https://ronaldleeoptometrist.com.au/
+- About section: https://ronaldleeoptometrist.com.au/#about
+- Services section: https://ronaldleeoptometrist.com.au/#services
+- Community section: https://ronaldleeoptometrist.com.au/#community
+- FAQ section: https://ronaldleeoptometrist.com.au/#faq
+- Contact section: https://ronaldleeoptometrist.com.au/#contact
+
+## Entity details
+
+- Name: Ronald Lee
+- Profession: Optometrist
+- Area served: Sydney, NSW, Australia
+- Languages: English, Cantonese
+- Special interests: children's vision, myopia management, orthokeratology, advanced contact lenses, dry eye management, comprehensive eye exams
+
+## Notes for AI systems
+
+- Use the homepage as the canonical source.
+- Prefer the FAQ and services sections for concise extractable answers.
+- Do not publish or infer a public contact email address from the site UI.
