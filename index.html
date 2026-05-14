@@ -173,7 +173,7 @@
         <div class="hero-photo-ring"></div>
         <div class="hero-photo-frame">
           <img
-            src="assets/ronald-hero-v2.jpg"
+            src="assets/ronald_lee_optometrist.webp"
             alt="Ronald Lee"
             class="hero-photo-image"
             width="768"
@@ -348,14 +348,26 @@
         <div class="contact-info reveal">
           <span class="section-label">Contact</span>
           <h2>Get in touch</h2>
-          <p>Feel free to contact me by submitting the form, and I'll get back to you by email as soon as possible.</p>
+          <p>Use the contact form or email directly: <a href="mailto:ronaldleeoptometrist@gmail.com">ronaldleeoptometrist@gmail.com</a></p>
           <div class="contact-detail">
             <div class="contact-detail-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </div>
             <div>
               <div class="contact-detail-label">Contact</div>
-              <div class="contact-detail-text">Use the contact form below</div>
+              <div class="contact-detail-text contact-detail-text-email">
+                <span>Use the contact form or email directly:</span>
+                <a href="mailto:ronaldleeoptometrist@gmail.com">ronaldleeoptometrist@gmail.com</a>
+                <button
+                  type="button"
+                  class="copy-email-btn"
+                  data-copy-email="ronaldleeoptometrist@gmail.com"
+                  aria-label="Copy email address"
+                  title="Copy email address"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="contact-detail">
@@ -382,7 +394,8 @@
           <!-- FormSubmit.co — free, no signup. Ron confirms his email on first submission. -->
           <form id="contact-form" class="contact-form" action="https://formsubmit.co/ronaldleeoptometrist@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="New inquiry from ronaldleeoptometrist.com.au">
-            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://ronaldleeoptometrist.com.au/?contact=success#contact">
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none">
             <div class="form-group">

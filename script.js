@@ -48,41 +48,63 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   const statusEl = document.getElementById('form-status');
 
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+  if (form && statusEl) {
+    const submitBtn = form.querySelector('.form-submit');
+    const params = new URLSearchParams(window.location.search);
 
-      const submitBtn = form.querySelector('.form-submit');
-      const originalText = submitBtn.textContent;
+    if (params.get('contact') === 'success') {
+      statusEl.className = 'form-status success';
+      statusEl.textContent = 'Thank you for your message. Ronald will be in touch shortly.';
+    }
+
+    form.addEventListener('submit', () => {
       statusEl.className = 'form-status';
       statusEl.textContent = '';
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
-
-      try {
-        const data = new FormData(form);
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          statusEl.className = 'form-status success';
-          statusEl.textContent = 'Thank you for your message! Ron will be in touch shortly.';
-          form.reset();
-        } else {
-          throw new Error('Form submission failed');
-        }
-      } catch (err) {
-        statusEl.className = 'form-status error';
-        statusEl.textContent = 'Something went wrong. Please try again shortly.';
+      if (submitBtn) {
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
       }
-
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
     });
   }
+
+  // --- Copy email buttons ---
+  document.querySelectorAll('[data-copy-email]').forEach(button => {
+    button.addEventListener('click', async () => {
+      const email = button.getAttribute('data-copy-email');
+      if (!email) return;
+
+      const copyWithFallback = () => {
+        const tempInput = document.createElement('input');
+        tempInput.value = email;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        tempInput.remove();
+      };
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(email);
+        } else {
+          copyWithFallback();
+        }
+
+        const originalAriaLabel = button.getAttribute('aria-label') || 'Copy email address';
+        const originalTitle = button.getAttribute('title') || 'Copy email address';
+        button.classList.add('copied');
+        button.setAttribute('aria-label', 'Email copied');
+        button.setAttribute('title', 'Copied');
+
+        window.setTimeout(() => {
+          button.classList.remove('copied');
+          button.setAttribute('aria-label', originalAriaLabel);
+          button.setAttribute('title', originalTitle);
+        }, 1600);
+      } catch (error) {
+        copyWithFallback();
+      }
+    });
+  });
 
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

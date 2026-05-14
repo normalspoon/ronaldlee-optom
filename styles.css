@@ -1064,6 +1064,53 @@ section {
   color: var(--text-secondary);
 }
 
+.contact-detail-text a {
+  color: var(--teal-700);
+  text-decoration: none;
+}
+
+.contact-detail-text a:hover {
+  text-decoration: underline;
+}
+
+.contact-detail-text-email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+}
+
+.copy-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.95rem;
+  height: 1.95rem;
+  padding: 0;
+  border: 1px solid var(--teal-200);
+  border-radius: 999px;
+  background: var(--teal-50);
+  color: var(--teal-700);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.copy-email-btn:hover {
+  background: white;
+  border-color: var(--teal-300);
+}
+
+.copy-email-btn.copied {
+  background: var(--teal-700);
+  border-color: var(--teal-700);
+  color: white;
+}
+
+.copy-email-btn svg {
+  width: 13px;
+  height: 13px;
+}
+
 .contact-detail-label {
   font-size: 0.78rem;
   color: var(--text-muted);
