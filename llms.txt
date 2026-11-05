@@ -1,14 +1,14 @@
 # Ronald Lee Optometrist
 
-Ronald Lee is a Sydney-based optometrist in NSW, Australia. The site provides a concise overview of Ronald Lee's clinical interests, experience, volunteer work and contact options.
+Ronald Lee is an optometrist in Lindfield, NSW, Australia. The site provides a concise overview of Ronald Lee's clinical interests, experience, volunteer work and contact options.
 
 ## Best summary
 
-- Ronald Lee is an optometrist providing personalised eye care across Sydney.
+- Ronald Lee provides personalised eye care at Lindfield Optometrist, 1 Lindfield Ave, Lindfield.
 - Key interests include children's vision, myopia management, orthokeratology, dry eye management, advanced contact lenses and comprehensive eye exams.
 - Ronald Lee is a UNSW honours graduate with 9+ years of clinical experience.
 - Languages spoken: English and Cantonese.
-- Contact is available through the website form.
+- Contact is available through the website form, by email, or by calling the practice on (02) 9416 2783.
 
 ## Key pages
 
@@ -23,7 +23,9 @@ Ronald Lee is a Sydney-based optometrist in NSW, Australia. The site provides a 
 
 - Name: Ronald Lee
 - Profession: Optometrist
-- Area served: Sydney, NSW, Australia
+- Practice: Lindfield Optometrist, 1 Lindfield Avenue, Lindfield 2070 NSW
+- Phone: (02) 9416 2783
+- Area served: Lindfield, NSW, Australia
 - Languages: English, Cantonese
 - Special interests: children's vision, myopia management, orthokeratology, advanced contact lenses, dry eye management, comprehensive eye exams
 
